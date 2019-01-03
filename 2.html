@@ -1,9 +1,11 @@
-<!doctype html>
+<!doctype HTML>
 <html>
 <head>
   <title>WEB - CSS</title>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
+
   <style>
+
   body{
     margin:0;
   }
@@ -11,46 +13,67 @@
     color:black;
     text-decoration: none;
   }
+
+
   h1{
-    text-align: center;
-    font-size: 79px;
-    border-bottom: 4px solid gray;
+    font-size:65px;
+    text-align:center;
+    border-bottom: 1px solid gray;
+    padding:20px;
+    margin:0;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  ol{
+    width:100px;
+    border-right: 1px solid gray;
     margin: 0;
     padding:20px;
   }
-  ol{
-    border-right:3px solid gray;
-    width:100px;
-    margin:0;
-    padding:20px;
-  }
-  .saw{
-    color:gray;
-  }
-  #active{
-    color:red;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  </style>
 
+    #grid ol{
+      padding-left:33px;
+    }
+
+    #grid #article{  /*grid 안의 article! 이라는 뜻 */
+      padding-left: 25px;
+    }
+
+
+  </style>
 </head>
+
+
+
+
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <div id="grid">
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html" id="active">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-  <div>
-    <h2>CSS</h2>
-    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing asdf
-      sdfasdfasdfasfdasfasdfasdfawefasefawesbasbetabsetbast6533535353sa5etsat3es
-      ase53t43se4t3as4t3as3t4sa3t4sa4t3as4t4a34ast43as4t3a4.세종대왕.태정태세문단세예성연중인명선?맞나?
-    </p>
-  </div>
+  <h1> WEB </h1>
+<div id="grid">
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+<div id="article">
+  <h2>CSS</h2>
+  <p>Cascading Style Sheets (CSS) is a style sheet language used for
+    describing the presentation of a document written in a markup language.
+    [1] Although most often used to set the visual style of web pages and
+    user interfaces written in HTML and XHTML, the language can be applied to
+    any XML document, including plain XML, SVG and XUL, and is applicable to
+    rendering in speech, or on other media. Along with HTML and JavaScript,
+    CSS is a cornerstone technology used by most websites to create visually
+    engaging webpages, user interfaces for web applications, and user interfaces
+    for many mobile applications.
+  </p>
+</div>
+
+
 </body>
+
+
+
 </html>
